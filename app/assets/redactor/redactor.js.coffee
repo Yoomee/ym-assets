@@ -1,8 +1,8 @@
 #= require redactor/redactor
 
-RLANG.media = "Insert Media..."
-RLANG.media_url = "Enter the URL of a video on Youtube or Vimeo"
-RLANG.media_html_code = "Media embed code"
+$.Redactor.opts.langs['en']['media'] = "Insert Media"
+$.Redactor.opts.langs['en']['media_url'] = "Enter the URL of a video on Youtube or Vimeo"
+$.Redactor.opts.langs['en']['media_html_code'] = "Media embed code"
 
 window.EmbeddableMedia = 
   hosts:
@@ -48,23 +48,23 @@ window.Redactor=
       ],
       buttonsCustom:
         media:
-          title: RLANG.media
+          title: lang.media
           func: 'showMedia'
       modal_media: "
         <form id='redactorInsertVideoForm'>
-          <label>#{RLANG.media_url}</label>
+          <label>#{lang.media_url}</label>
           <input type='text' id='redactor_insert_media_url_input' style='width: 99%;'>
           <a href='#' data-toggle='collapse' data-target='#redactorMediaAdvanced'>Advanced options</a>
           <div id='redactorMediaAdvanced' class='collapse'>
-            <label>#{RLANG.media_html_code}</label>
+            <label>#{lang.media_html_code}</label>
             <textarea id='redactor_insert_media_html_area' style='width: 99%; height: 120px;'></textarea>
           </div>
         </form>
         <div id='redactor_modal_footer'>
           <span class='redactor_btns_box'>
-            <input type='button' id='redactor_insert_media_btn' class='btn btn-primary btn-small' value='#{RLANG.insert}'>
+            <input type='button' id='redactor_insert_media_btn' class='btn btn-primary btn-small' value='#{lang.insert}'>
             <a href='javascript:void(null);' id='redactor_btn_modal_close'>
-            #{RLANG.cancel}
+            #{lang.cancel}
             </a>
           </span>
         </div>"
