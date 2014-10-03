@@ -1,6 +1,6 @@
 #= require jquery-migrate
 #= require autogrow
-#= require jquery.ui.all
+#= require jquery-ui
 #= require jquery-ui-timepicker-addon
 #= require bootstrap
 #= require bootstrap-colorpicker
